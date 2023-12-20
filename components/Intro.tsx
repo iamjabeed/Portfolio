@@ -15,17 +15,17 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
   //   const { ref } = useSectionInView("Home", 0.5);
-  //   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { setActiveSection, setTimeOfLastClick, timeOfLastClick } =
+    useActiveSectionContext();
   const { ref, inView } = useInView({
     threshold: 0.5,
   });
-  const { setActiveSection } = useActiveSectionContext();
 
   useEffect(() => {
-    if (inView) {
+    if (inView && Date.now() - timeOfLastClick > 1000) {
       setActiveSection("Home");
     }
-  }, [inView, setActiveSection]);
+  }, [inView, setActiveSection, timeOfLastClick]);
   return (
     <section
       ref={ref}
