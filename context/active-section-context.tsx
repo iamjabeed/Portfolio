@@ -17,6 +17,8 @@ const ActiveSectionContextProvider = ({
   children,
 }: activeSectionContextProps) => {
   const [activeSection, setActiveSection] = useState<sectionName>("Home");
+  //TODO: we need to keep track of this to disable the observer temporarily when user clicks on a link
+  const [timeOfLastClick, setTimeOfLastClick] = useState(0);
   return (
     <ActiveSectionContext.Provider
       value={{
