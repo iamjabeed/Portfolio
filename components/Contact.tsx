@@ -4,9 +4,11 @@ import { motion } from "framer-motion";
 import { FaPaperPlane } from "react-icons/fa";
 import SectionHeading from "./SectionHeading";
 import { useSectionInView } from "@/lib/hooks";
+import { sendEmail } from "@/actions/sendEmails";
 
 const Contact = () => {
   const { ref } = useSectionInView("Contact", 0);
+
   return (
     <motion.section
       id="contact"
@@ -37,8 +39,7 @@ const Contact = () => {
       <form
         className="flex flex-col mt-10 "
         action={async (formData) => {
-          console.log(formData.get("email"));
-          console.log(formData.get("message"));
+          await sendEmail(formData);
         }}
       >
         <input
