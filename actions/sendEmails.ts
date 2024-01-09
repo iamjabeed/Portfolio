@@ -3,7 +3,8 @@
 import { Resend } from "resend";
 import { validateString, getErrorMessage } from "@/lib/utils";
 import { trace } from "console";
-// import ContactFormEmail from "@/email/contact-form-email";
+import CustomEmail from "@/email/custom-email";
+import React from "react";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -32,7 +33,11 @@ export const sendEmail = async (formData: FormData) => {
       to: "jabeedsyedinfo@gmail.com",
       subject: "Message from portfolio contact form",
       reply_to: email,
-      text: message,
+      //   text: message,
+      react: React.createElement(CustomEmail, {
+        message: message,
+        email: email,
+      }),
     });
   } catch (error: unknown) {
     return {

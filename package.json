@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-email/components": "^0.0.12",
+    "@react-email/tailwind": "^0.0.13",
     "clsx": "^2.0.0",
     "framer-motion": "^10.16.16",
     "next": "14.0.4",
