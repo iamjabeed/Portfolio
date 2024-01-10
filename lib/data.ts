@@ -33,32 +33,32 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
-  {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
-  },
-] as const;
+// export const experiencesData = [
+//   {
+//     title: "Graduated bootcamp",
+//     location: "Miami, FL",
+//     description:
+//       "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+//     icon: React.createElement(LuGraduationCap),
+//     date: "2019",
+//   },
+//   {
+//     title: "Front-End Developer",
+//     location: "Orlando, FL",
+//     description:
+//       "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+//     icon: React.createElement(CgWorkAlt),
+//     date: "2019 - 2021",
+//   },
+//   {
+//     title: "Full-Stack Developer",
+//     location: "Houston, TX",
+//     description:
+//       "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+//     icon: React.createElement(FaReact),
+//     date: "2021 - present",
+//   },
+// ] as const;
 
 export const projectsData = [
   {
@@ -68,6 +68,8 @@ export const projectsData = [
 
     tags: ["React", "Express.js", "MongoDB", "Tailwind", "Mongoose", "Redux"],
     imageUrl: luxehaven,
+    live: "https://github.com/iamjabeed/LuxeHaven",
+    code: "https://github.com/iamjabeed/LuxeHaven",
   },
   {
     title: "The Filmagic",
@@ -75,6 +77,8 @@ export const projectsData = [
       "Created a movie streaming app with real-time access to detailed information on movies, TV shows, cast, related videos, and insider details using TMDB API.",
     tags: ["React", "SCSS", "React Router", "Redux", "TMDB API"],
     imageUrl: filmagic,
+    live: "https://filmagic-jabeed.vercel.app/",
+    code: "https://github.com/iamjabeed/Filmagic",
   },
   {
     title: "Vocalize",
@@ -82,6 +86,8 @@ export const projectsData = [
       "Created a React app with advanced speech recognition technology, providing users with an interactive and hands-free experience.",
     tags: ["React", "HTML5", "Tailwind", "Framer"],
     imageUrl: vocalize,
+    live: "https://vocalize-blush.vercel.app/",
+    code: "https://github.com/iamjabeed/Vocalize",
   },
 ] as const;
 

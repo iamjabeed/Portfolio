@@ -36,7 +36,7 @@ export default function About() {
             for startups and small businesses{" "}
           </span>{" "}
           to help them stand out in the digital landscape with a powerful
-          impact. 😎
+          impact.
         </p>
 
         <p className="mb-4">
