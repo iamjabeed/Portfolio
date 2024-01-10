@@ -15,7 +15,7 @@ const Contact = () => {
     <motion.section
       id="contact"
       ref={ref}
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center scroll-mt-28"
+      className="mb-20 sm:mb-28 w-[min(100%,35rem)] text-center scroll-mt-28"
       initial={{
         opacity: 0,
       }}
@@ -52,16 +52,26 @@ const Contact = () => {
           toast.success("Email sent successfully!");
         }}
       >
-        <input
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-          name="senderEmail"
-          type="email"
-          required
-          maxLength={500}
-          placeholder="Your email"
-        />
+        <div className="flex justify-between items-center gap-2">
+          <input
+            className="h-12 md:h-12 2xl:h-14 px-4 rounded-md borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all outline-none w-1/2"
+            // name="senderEmail"
+            type="text"
+            required
+            maxLength={500}
+            placeholder="Your name"
+          />
+          <input
+            className="h-10 md:h-12 2xl:h-14 px-4 rounded-md borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all outline-none w-1/2"
+            name="email"
+            type="email"
+            required
+            maxLength={500}
+            placeholder="Your email"
+          />
+        </div>
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-40 my-3 rounded-md borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all outline-none"
           name="message"
           placeholder="Your message"
           required

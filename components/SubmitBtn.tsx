@@ -5,7 +5,7 @@ const SubmitBtn = () => {
   return (
     <button
       type="submit"
-      className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65"
+      className="group bg-gray-900 text-white/80 w-full py-3 flex items-center justify-center gap-2 rounded-md outline-none focus:scale-110 active:scale-105 transition duration-300 hover:text-white text-sm xl:text-base uppercase text-center font-semibold dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65"
       disabled={pending}
     >
       {pending ? (
@@ -20,3 +20,23 @@ const SubmitBtn = () => {
   );
 };
 export default SubmitBtn;
+
+{
+  /* <motion.div
+initial={{ opacity: 0, x: -100 }}
+animate={{ opacity: 1, x: 0 }}
+transition={{ duration: 0.8, delay: 0.7 }}
+>
+<motion.a
+  href="#contact"
+  className="group bg-gray-900 text-white/80 w-52 py-3 flex items-center justify-center gap-2 rounded-md outline-none focus:scale-110 active:scale-105 transition duration-300 hover:text-white text-sm xl:text-base uppercase text-center font-semibold"
+  onClick={() => {
+    setActiveSection("Contact");
+    setTimeOfLastClick(Date.now());
+  }}
+>
+  Get in touch{" "}
+  <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition group-hover:opacity-100" />
+</motion.a>
+</motion.div> */
+}
