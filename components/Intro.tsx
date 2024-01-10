@@ -94,7 +94,7 @@ export default function Intro() {
         className="mb-10 mt-4 px-4 text-base font-medium !leading-[1.5] sm:text-lg lg:text-xl 2xl:text-2xl  w-full sm:w-[60%] mx-auto"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3, ease: "easeOut", delay: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
       >
         Hey there! <span className="hover:underline"> I'm Jabeed</span> , a
         multidisciplinary <span className="">full-stack developer</span> based

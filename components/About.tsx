@@ -19,32 +19,40 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About</SectionHeading>
-      <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
 
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
-      </p>
+      {/* I am an independent frontend developer, UI/UX designer and creator based in Melbourne, Australia.
+
+I specialize in crafting elevated, intuitive, and minimalistic designs for startups and small businesses to help them stand out in the digital landscape with a powerful impact. 😎 */}
+
+      <div className="text-start text-base lg:text-lg font-mono font-medium">
+        <p className="mb-4">
+          <span className="font-bold text-4xl leading-10">I</span> am embarking
+          on a transformative journey as a{" "}
+          <span className="font-bold underline">Computer Science (CSE) </span>
+          graduate, I've woven my passion for web development into the fabric of
+          my freelance career. I see myself as a{" "}
+          <span className="">constant learner</span>, always striving for
+          excellence. Building and fixing things, especially in the dynamic
+          world of the web, bring me genuine joy.
+        </p>
+
+        <p className="mb-4">
+          <span className="">Beyond crafting websites,</span> I aim to create
+          <span className="font-bold underline">
+            {" "}
+            digital experiences that go beyond the ordinary{" "}
+          </span>
+          . Every line of code and pixel placement reflects my dedication to
+          delivering solutions that exceed expectations. In essence, I'm not
+          just a web developer; I'm an architect of digital landscapes, a
+          storyteller of brands, and a perpetual student of the evolving web
+          development universe.
+        </p>
+        <p>
+          <span className="font-bold"></span> Aside from building for the web, I
+          deeply enjoy playing volleyball and video games .
+        </p>
+      </div>
     </motion.section>
   );
 }
