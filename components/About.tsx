@@ -20,20 +20,23 @@ export default function About() {
     >
       <SectionHeading>About</SectionHeading>
 
-      {/* I am an independent frontend developer, UI/UX designer and creator based in Melbourne, Australia.
-
-I specialize in crafting elevated, intuitive, and minimalistic designs for startups and small businesses to help them stand out in the digital landscape with a powerful impact. 😎 */}
-
-      <div className="text-start text-base lg:text-lg font-mono font-medium">
+      <div className="text-start text-base lg:text-lg font-mono font-medium px-2">
         <p className="mb-4">
           <span className="font-bold text-4xl leading-10">I</span> am embarking
           on a transformative journey as a{" "}
           <span className="font-bold underline">Computer Science (CSE) </span>
           graduate, I've woven my passion for web development into the fabric of
-          my freelance career. I see myself as a{" "}
-          <span className="">constant learner</span>, always striving for
-          excellence. Building and fixing things, especially in the dynamic
-          world of the web, bring me genuine joy.
+          my freelance career. Building and fixing things, especially in the
+          dynamic world of the web, bring me genuine joy.
+        </p>
+        <p className="mb-4">
+          I specialize in crafting elevated, intuitive, and minimalistic designs
+          <span className="font-bold underline">
+            {" "}
+            for startups and small businesses{" "}
+          </span>{" "}
+          to help them stand out in the digital landscape with a powerful
+          impact. 😎
         </p>
 
         <p className="mb-4">
@@ -45,8 +48,7 @@ I specialize in crafting elevated, intuitive, and minimalistic designs for start
           . Every line of code and pixel placement reflects my dedication to
           delivering solutions that exceed expectations. In essence, I'm not
           just a web developer; I'm an architect of digital landscapes, a
-          storyteller of brands, and a perpetual student of the evolving web
-          development universe.
+          storyteller of brands.
         </p>
         <p>
           <span className="font-bold"></span> Aside from building for the web, I
