@@ -6,6 +6,27 @@ import luxehaven from "@/public/luxehaven.png";
 import filmagic from "@/public/filmagic.png";
 import vocalize from "@/public/vocalize.png";
 
+import HTML from "@/public/skills/html.png";
+import CSS from "@/public/skills/css.png";
+import figma from "@/public/skills/figma.png";
+import git from "@/public/skills/git.png";
+import javascript from "@/public/skills/javascript.png";
+import node from "@/public/skills/node.png";
+import react from "@/public/skills/react.png";
+import redux from "@/public/skills/redux.png";
+import sass from "@/public/skills/sass.png";
+import expressjs from "@/public/skills/express.png";
+import github from "@/public/skills/github.png";
+import java from "@/public/skills/java.png";
+import mongodb from "@/public/skills/mongodb.png";
+import mysql from "@/public/skills/mysql.png";
+import nextjs from "@/public/skills/nextjs.png";
+import tailwind from "@/public/skills/tailwind.png";
+import typescript from "@/public/skills/typescript.png";
+import docker from "@/public/skills/docker.png";
+import postman from "@/public/skills/postman.png";
+import vscode from "@/public/skills/vscode.png";
+
 export const links = [
   {
     name: "Home",
@@ -92,21 +113,24 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "Taiwind CSS",
-  "SCSS/SASS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Redux",
-  "Next.js",
-  "Node.js",
-  "Express",
-  "MongoDB",
-  "Mongoose",
-  "Git",
-  "Python",
-  "Java",
-  "Framer Motion",
+  { skillName: "HTML", skillUrl: HTML },
+  { skillName: "CSS", skillUrl: CSS },
+  { skillName: "Tailwind CSS", skillUrl: tailwind },
+  { skillName: "Sass", skillUrl: sass },
+  { skillName: "JavaScript", skillUrl: javascript },
+  { skillName: "React", skillUrl: react },
+  { skillName: "Redux", skillUrl: redux },
+  { skillName: "TypeScript", skillUrl: typescript },
+  { skillName: "Next.js", skillUrl: nextjs },
+  { skillName: "Node.js", skillUrl: node },
+  { skillName: "Express.js", skillUrl: expressjs },
+  { skillName: "MongoDB", skillUrl: mongodb },
+  { skillName: "MySQL", skillUrl: mysql },
+  { skillName: "Docker", skillUrl: docker },
+  { skillName: "Java", skillUrl: java },
+  { skillName: "Git", skillUrl: git },
+  { skillName: "GitHub", skillUrl: github },
+  { skillName: "VsCode", skillUrl: vscode },
+  { skillName: "Figma", skillUrl: figma },
+  { skillName: "Postman", skillUrl: postman },
 ] as const;

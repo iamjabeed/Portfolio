@@ -3,17 +3,21 @@ import { useSectionInView } from "@/lib/hooks";
 import SectionHeading from "./SectionHeading";
 import { skillsData } from "@/lib/data";
 import { delay, motion } from "framer-motion";
+import { FaNode } from "react-icons/fa";
+import Image from "next/image";
 
 const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
     y: 100,
+    scale: 0.5,
   },
   animate: (index: number) => ({
     opacity: 1,
     y: 0,
+    scale: 1,
     transition: {
-      delay: 0.05 * index,
+      delay: 0.06 * index,
     },
   }),
 };
@@ -27,10 +31,10 @@ const Skills = () => {
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
       <SectionHeading>Skills</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-gray-800 text-lg">
+      <ul className="grid grid-cols-4 lg:grid-cols-7 gap-3 text-gray-800 text-lg">
         {skillsData.map((skill, index) => (
-          <motion.li
-            className="bg-white border border-black/[0.2] rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+          <motion.div
+            className="bg-white/90 border border-black/[0.1] rounded-sm p-3 dark:bg-white/80 dark:text-white/80"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
@@ -39,9 +43,20 @@ const Skills = () => {
               once: true,
             }}
             custom={index}
+            // transition={{
+            //   duration: 1,
+            // }}
           >
-            {skill}
-          </motion.li>
+            <div className="flex justify-center items-center w-full h-full">
+              <Image
+                src={skill.skillUrl}
+                alt={`Skill ${skill.skillName}`}
+                width={45}
+                height={44}
+                // className="rounded-full"
+              />
+            </div>
+          </motion.div>
         ))}
       </ul>
     </section>
