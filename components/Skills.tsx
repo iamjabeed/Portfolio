@@ -53,6 +53,8 @@ const Skills = () => {
                 alt={`Skill ${skill.skillName}`}
                 width={45}
                 height={44}
+                // layout="fixed"
+                // objectFit="contain"
                 // className="rounded-full"
               />
             </div>

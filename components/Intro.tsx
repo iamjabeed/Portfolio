@@ -12,6 +12,7 @@ import HeroImg from "../public/profile.jpg";
 
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import SocialLinks from "./SocialLinks";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -171,6 +172,7 @@ export default function Intro() {
           <FaGithubSquare />
         </a> */}
       </motion.div>
+      <SocialLinks />
     </section>
   );
 }
