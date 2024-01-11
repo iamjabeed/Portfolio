@@ -23,24 +23,23 @@ export default function Intro() {
   useEffect(() => {
     const updateTime = () => {
       const now = new Date();
-      const hours = now.getHours();
+      let hours = now.getHours();
       const minutes = now.getMinutes();
       const amPm = hours >= 12 ? "PM" : "AM";
 
       // Convert to 12-hour format
+      hours = hours % 12 || 12;
+
       const formattedTime = `${hours}:${
         minutes < 10 ? "0" : ""
       }${minutes} ${amPm}`;
       setCurrentTime(formattedTime);
     };
-
-    // Update time on mount
     updateTime();
 
-    // Update time every minute
+    //* Update time every minute
     const intervalId = setInterval(updateTime, 60000);
 
-    // Clean up the interval on component unmount
     return () => clearInterval(intervalId);
   }, []);
 
@@ -172,7 +171,7 @@ export default function Intro() {
           <FaGithubSquare />
         </a> */}
       </motion.div>
-      <SocialLinks />
+      {/* <SocialLinks /> */}
     </section>
   );
 }

@@ -99,14 +99,14 @@ const Header = () => {
         <ul className="w-full flex justify-between md:justify-center flex-row md:flex-col gap-6 md:gap-4  font-bold text-gray-500 h-full">
           {links.map((link) => (
             <motion.li
-              className="flex items-center justify-center relative md:h-10 w-full"
+              className="flex items-center justify-center relative md:h-10 w-full "
               key={link.hash}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
               <Link
                 className={clsx(
-                  "group flex w-full items-center justify-center p-1 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
+                  "group flex w-full items-center justify-center p-1",
                   {
                     "text-gray-950 dark:text-gray-200":
                       activeSection === link.name,
@@ -125,9 +125,9 @@ const Header = () => {
                   height="30"
                   quality="95"
                   priority={true}
-                  className="object-cover shadow-xl"
+                  className="object-cover transition-all  opacity-80 hover:opacity-100 hover:scale-105 duration-300"
                 />
-                <span className="absolute left-16 hidden md:group-hover:block">
+                <span className="absolute -top-4 left-14 hidden md:group-hover:block bg-gray-900 py-1 px-2 text-white rounded-md text-sm font-normal">
                   {link.name}
                 </span>
 
