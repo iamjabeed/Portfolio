@@ -82,7 +82,7 @@ export default function Intro() {
           >
             <Image
               src={HeroImg}
-              alt="Ricardo portrait"
+              alt="Jabeed portrait"
               width="192"
               height="192"
               quality="95"
@@ -94,12 +94,13 @@ export default function Intro() {
       </motion.div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-base font-medium !leading-[1.5] sm:text-lg lg:text-xl 2xl:text-2xl  w-full sm:w-[60%] mx-auto"
+        className="mb-10 mt-4 px-4 text-base font-medium !leading-[1.5] sm:text-base lg:text-lg 2xl:text-2xl w-full sm:w-[60%] mx-auto dark:text-gray-300 dark:font-medium text-left"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
       >
-        Hey there! <span className="hover:underline"> I'm Jabeed</span> , a
+        <span className="font-bold text-4xl leading-10 mr-1">H</span>ey there!{" "}
+        <span className="hover:underline"> I'm Jabeed</span> , a
         multidisciplinary <span className="">full-stack developer</span> based
         in india. I specialize in crafting sleek and responsive websites. with a
         focus on React (Next.js). Let's turn your ideas into digital brilliance!

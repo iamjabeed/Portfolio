@@ -31,10 +31,10 @@ const Skills = () => {
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
       <SectionHeading>Skills</SectionHeading>
-      <ul className="grid grid-cols-4 lg:grid-cols-7 gap-3 text-gray-800 text-lg">
+      <ul className="grid grid-cols-5 lg:grid-cols-8 2xl:grid-cols-10 gap-4 px-4 lg:px-0">
         {skillsData.map((skill, index) => (
           <motion.div
-            className="bg-white/90 border border-black/[0.1] rounded-sm p-3 dark:bg-white/80 dark:text-white/80"
+            className="bg-transparent border border-black/[0.1] rounded-full p-3 dark:border-white/[0.1] w-full h-full flex items-center justify-center "
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
@@ -47,7 +47,7 @@ const Skills = () => {
             //   duration: 1,
             // }}
           >
-            <div className="flex justify-center items-center w-full h-full">
+            <div className="rounded-full overflow-hidden w-full h-full flex justify-center items-center">
               <Image
                 src={skill.skillUrl}
                 alt={`Skill ${skill.skillName}`}
