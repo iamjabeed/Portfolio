@@ -30,32 +30,31 @@ import docker from "@/public/skills/docker.png";
 import postman from "@/public/skills/postman.png";
 import vscode from "@/public/skills/vscode.png";
 
-import Home from "@/public/icons/icons8-home-500.png";
-import About from "@/public/icons/icons8-person-90.png";
-import Projects from "@/public/icons/icons8-business-100.png";
-import Skills from "@/public/icons/icons8-education-90.png";
-import Contact from "@/public/icons/icons8-mail-contact-90.png";
+import { GoHome } from "react-icons/go";
+import { RxPerson } from "react-icons/rx";
+import { MdOutlineWorkOutline, MdOutlineEmail } from "react-icons/md";
+import { SiPolywork } from "react-icons/si";
 
 export const links = [
   {
     name: "Home",
     hash: "#home",
-    icon: Home,
+    icon: <GoHome />,
   },
   {
     name: "About",
     hash: "#about",
-    icon: About,
+    icon: <RxPerson />,
   },
   {
     name: "Projects",
     hash: "#projects",
-    icon: Projects,
+    icon: <SiPolywork />,
   },
   {
     name: "Skills",
     hash: "#skills",
-    icon: Skills,
+    icon: <MdOutlineWorkOutline />,
   },
   // {
   //   name: "Experience",
@@ -64,7 +63,7 @@ export const links = [
   {
     name: "Contact",
     hash: "#contact",
-    icon: Contact,
+    icon: <MdOutlineEmail />,
   },
 ] as const;
 

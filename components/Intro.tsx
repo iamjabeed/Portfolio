@@ -14,6 +14,8 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import SocialLinks from "./SocialLinks";
 
+import Home from "@/public/icons/icons8-home-500.png";
+
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
@@ -54,10 +56,11 @@ export default function Intro() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, ease: "easeOut", delay: 0.3 }}
-          className="py-4 font-mono text-sm md:text-base text-center text-gray-800"
+          className="py-4 font-mono text-sm md:text-base text-center text-gray-800 dark:text-gray-200"
         >
           {currentTime}
         </motion.h2>
+
         <motion.div
           className="relative"
           drag
@@ -119,7 +122,7 @@ export default function Intro() {
         >
           <motion.a
             href="#contact"
-            className="group bg-gray-900 text-white/80 w-[80vw] sm:w-52 py-3 flex items-center justify-center gap-2 rounded-md outline-none focus:scale-110 active:scale-105 transition duration-300 hover:text-white text-sm xl:text-base uppercase text-center font-semibold"
+            className="group bg-gray-900  text-white/80 w-[80vw] sm:w-52 py-3 flex items-center justify-center gap-2 rounded-md outline-none focus:scale-110 active:scale-105 transition duration-300 hover:text-white text-sm xl:text-base uppercase text-center font-semibold dark:bg-[#FFD700] dark:text-black"
             onClick={() => {
               setActiveSection("Contact");
               setTimeOfLastClick(Date.now());
@@ -137,7 +140,7 @@ export default function Intro() {
           className="hidden sm:block"
           drag
         >
-          <FaCat />
+          <FaCat className="" />
         </motion.span>
 
         <motion.div
