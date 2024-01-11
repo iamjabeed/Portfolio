@@ -55,7 +55,7 @@ const Contact = () => {
       </p> */}
       <p className="my-2">Let's talk about working together!</p>
 
-      <div className="flex gap-3 mt-5 cursor-pointer">
+      <div className="flex justify-center items-center gap-3 flex-col sm:flex-row w-full sm:w-auto mx-auto mt-5 cursor-pointer">
         <a
           href="tel:+917893932609"
           className="group bg-gray-900  text-white/80 w-[80vw] sm:w-52 py-3 flex items-center justify-center gap-2 rounded-md outline-none focus:scale-110 active:scale-105 transition duration-300 hover:text-white text-sm xl:text-base uppercase text-center font-semibold dark:bg-[#FFD700] dark:text-black"

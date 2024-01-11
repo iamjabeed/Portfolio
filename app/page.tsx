@@ -14,7 +14,7 @@ export default function Home() {
       <SocialLinks />
       <SectionDivider />
       <About />
-      {/* <Projects /> */}
+      <Projects />
       <Skills />
       {/* <Experience /> */}
       <Contact />

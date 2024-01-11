@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState, createContext, useContext } from "react";
+import toast from "react-hot-toast";
 
 type Theme = "light" | "dark";
 
@@ -25,10 +26,26 @@ export default function ThemeContextProvider({
       setTheme("dark");
       window.localStorage.setItem("theme", "dark");
       document.documentElement.classList.add("dark");
+      toast("Eyes in the dark!", {
+        icon: "🌚",
+        style: {
+          borderRadius: "10px",
+          background: "#333",
+          color: "#fff",
+        },
+      });
     } else {
       setTheme("light");
       window.localStorage.setItem("theme", "light");
       document.documentElement.classList.remove("dark");
+      toast("Illuminate your screen!", {
+        icon: "☀️",
+        style: {
+          borderRadius: "10px",
+          background: "#333",
+          color: "#fff",
+        },
+      });
     }
   };
 

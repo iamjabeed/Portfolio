@@ -4,10 +4,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-black/20">
-      <div className="my-10 px-4 text-center text-gray-500 w-[80vw] max-w-6xl mx-auto">
+    <footer className="">
+      <div className="my-10 px-4 text-left sm:text-center text-gray-500 w-[80vw] max-w-6xl mx-auto mr-10 sm:mr-auto">
         <small className="mb-2 block text-sm font-semibold">
-          &copy; {currentYear} made with 💛 by{" "}
+          &copy; {currentYear} crafted with 💛 by{" "}
           <Link
             href="https://www.linkedin.com/in/iamjabeed/"
             className="hover:cursor-pointer hover:underline"
@@ -17,9 +17,11 @@ const Footer = () => {
           . All rights reserved.
         </small>
         <p className="text-sm ">
-          <span className="font-semibold">About this website:</span> built with
-          React & Next.js (App Router & Server Actions), TypeScript, Tailwind
-          CSS, Framer Motion, React Email & Resend, Vercel hosting.
+          <span className="font-semibold">Embark on a journey:</span> This
+          website is a React & Next.js masterpiece (with App Router & Server
+          Actions), sprinkled with TypeScript, tailored using Tailwind CSS,
+          choreographed with Framer Motion, empowered by React Email & Resend,
+          and hosted gracefully on Vercel.
         </p>
       </div>
     </footer>
