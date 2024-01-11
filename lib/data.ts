@@ -3,7 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import { HiHome } from "react-icons/hi";
-import { IoPersonOutline } from "react-icons/io";
+// import { IoPersonOutline } from "react-icons/io";
 
 import luxehaven from "@/public/luxehaven.png";
 import filmagic from "@/public/filmagic.png";
