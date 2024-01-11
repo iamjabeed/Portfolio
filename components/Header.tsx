@@ -7,25 +7,27 @@ import Link from "next/link";
 import { links } from "@/lib/data";
 import { useContext, useState } from "react";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import Image from "next/image";
 
 const Header = () => {
   // const [activeSection, setActiveSection] = useState("Contact");
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
   return (
-    <header className="z-[999] relative ">
-      <motion.div
+    <header className="z-[999]  border border-gray-700 fixed top-0 bottom-0 w-20">
+      {/* <motion.div
         className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 "
         initial={{ y: 100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
         transition={{ delay: 0.2 }}
-      ></motion.div>
+      ></motion.div> */}
 
-      <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0 ">
-        <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+      {/* <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0 "> */}
+      <nav className="flex items-center h-screen w-full">
+        <ul className="flex flex-col w-14 gap-2 text-lg font-bold text-gray-100 ml-2 ">
           {links.map((link) => (
             <motion.li
-              className="h-3/4 flex items-center justify-center relative"
+              className="relative "
               key={link.hash}
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -45,11 +47,20 @@ const Header = () => {
                   setTimeOfLastClick(Date.now());
                 }}
               >
-                {link.name}
+                {/* {link.name} */}
+                <Image
+                  src={link.icon}
+                  alt="Ricardo portrait"
+                  width="20"
+                  height="20"
+                  quality="95"
+                  priority={true}
+                  className="object-cover shadow-xl"
+                />
 
                 {link.name === activeSection && (
                   <motion.span
-                    className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
+                    className="bg-gray-100 rounded-[5rem] absolute inset-0 -z-10 dark:bg-gray-800"
                     layoutId="activeSection"
                     transition={{
                       type: "spring",
