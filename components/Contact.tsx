@@ -45,15 +45,7 @@ const Contact = () => {
       }}
     >
       <SectionHeading>Contact</SectionHeading>
-
-      {/* <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:jabeedsyedinfo@gmail.com">
-          jabeedsyedinfo@gmail.com
-        </a>{" "}
-        or through this form.
-      </p> */}
-      <p className="my-2">Let's talk about working together!</p>
+      <p className="my-2">Let&apos;s talk about working together!</p>
 
       <div className="flex justify-center items-center gap-3 flex-col sm:flex-row w-full sm:w-auto mx-auto mt-5 cursor-pointer">
         <a
@@ -64,7 +56,6 @@ const Contact = () => {
           <FaPhone /> Book a Call
         </a>
         <a
-          // href={`mailto:example@example.com`}
           className="group bg-gray-900  text-white/80 w-[80vw] sm:w-52 py-3 flex items-center justify-center gap-2 rounded-md outline-none focus:scale-110 active:scale-105 transition duration-300 hover:text-white text-sm xl:text-base uppercase text-center font-semibold dark:bg-[#FFD700] dark:text-black"
           onClick={handleCopyEmail}
         >
@@ -97,7 +88,6 @@ const Contact = () => {
         <div className="flex justify-between items-center gap-2">
           <input
             className="h-10 md:h-12 2xl:h-14 px-4 rounded borderBlack dark:bg-[#151313] placeholder-[#eaeaeab9] text-[#fdfdfd] transition-all outline-none w-1/2  focus:border-[#FF2E63]"
-            // name="senderEmail"
             type="text"
             required
             maxLength={500}

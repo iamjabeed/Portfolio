@@ -11,7 +11,6 @@ import HeroImg from "../public/profile.jpg";
 
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import SocialLinks from "./SocialLinks";
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
@@ -57,16 +56,7 @@ export default function Intro() {
           {currentTime}
         </motion.h2>
 
-        <motion.div
-          className="relative"
-          drag
-          // dragConstraints={{
-          //   top: -50,
-          //   left: -50,
-          //   right: 50,
-          //   bottom: 50,
-          // }}
-        >
+        <motion.div className="relative" drag>
           <motion.div
             initial={{ opacity: 0, scale: 0.5, y: 100 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -96,19 +86,11 @@ export default function Intro() {
         transition={{ duration: 0.5, delay: 0.5 }}
       >
         <span className="font-bold text-4xl leading-10 mr-1">H</span>ey there!{" "}
-        <span className="hover:underline"> I'm Jabeed</span> , a
+        <span className="hover:underline"> I&apos;m Jabeed</span> , a
         multidisciplinary <span className="">full-stack developer</span> based
-        in india. I specialize in crafting sleek and responsive websites. with a
-        focus on React (Next.js). Let's turn your ideas into digital brilliance!
-        {/* <span className="font-bold">Hello, I'm Jabeed.</span> I'm a{" "}
-        <span className="font-bold">full-stack MERN developer</span> with{" "}
-        <span className="font-bold">8 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>. */}
-        {/* <h1 className="text-left leading-tight mt-0 mb-0 font-canopee text-[3rem] lg:text-[4rem]  font-bold">
-          I create elevating digital experiences that inspire and connect with
-          people through developement and design
-        </h1> */}
+        in India. I specialize in crafting sleek and responsive websites. with a
+        focus on React (Next.js). Let&apos;s turn your ideas into digital
+        brilliance!
       </motion.h1>
 
       <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium">
@@ -154,24 +136,7 @@ export default function Intro() {
             <HiDownload className="opacity-60 group-hover:translate-y-1 transition group-hover:opacity-100" />
           </motion.a>
         </motion.div>
-
-        {/* <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/iamjabeed/"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/iamjabeed"
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a> */}
       </motion.div>
-      {/* <SocialLinks /> */}
     </section>
   );
 }
