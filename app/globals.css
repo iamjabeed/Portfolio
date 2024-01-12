@@ -1,11 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
+:root {
+  height: 100%;
+  width: 100%;
+}
+body {
+  scroll-behavior: smooth;
+  /* font-family: "Poppins", sans-serif !important; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
 ::selection {
   background-color: #ff4800;
   color: #000000;
 }
 .borderBlack {
   @apply border border-black/10;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffd700;
+  border-radius: 2px;
 }

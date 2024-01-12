@@ -1,6 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaHtml5, FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import { HiHome } from "react-icons/hi";
 // import { IoPersonOutline } from "react-icons/io";
@@ -56,43 +56,13 @@ export const links = [
     hash: "#skills",
     icon: <MdOutlineWorkOutline />,
   },
-  // {
-  //   name: "Experience",
-  //   hash: "#experience",
-  // },
+
   {
     name: "Contact",
     hash: "#contact",
     icon: <MdOutlineEmail />,
   },
 ] as const;
-
-// export const experiencesData = [
-//   {
-//     title: "Graduated bootcamp",
-//     location: "Miami, FL",
-//     description:
-//       "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-//     icon: React.createElement(LuGraduationCap),
-//     date: "2019",
-//   },
-//   {
-//     title: "Front-End Developer",
-//     location: "Orlando, FL",
-//     description:
-//       "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-//     icon: React.createElement(CgWorkAlt),
-//     date: "2019 - 2021",
-//   },
-//   {
-//     title: "Full-Stack Developer",
-//     location: "Houston, TX",
-//     description:
-//       "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-//     icon: React.createElement(FaReact),
-//     date: "2021 - present",
-//   },
-// ] as const;
 
 export const projectsData = [
   {
@@ -126,24 +96,46 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  { skillName: "HTML", skillUrl: HTML },
-  { skillName: "CSS", skillUrl: CSS },
-  { skillName: "Tailwind CSS", skillUrl: tailwind },
-  { skillName: "Sass", skillUrl: sass },
-  { skillName: "JavaScript", skillUrl: javascript },
-  { skillName: "React", skillUrl: react },
-  { skillName: "Redux", skillUrl: redux },
-  { skillName: "TypeScript", skillUrl: typescript },
-  { skillName: "Next.js", skillUrl: nextjs },
-  { skillName: "Node.js", skillUrl: node },
-  { skillName: "Express.js", skillUrl: expressjs },
-  { skillName: "MongoDB", skillUrl: mongodb },
-  { skillName: "MySQL", skillUrl: mysql },
-  { skillName: "Docker", skillUrl: docker },
-  { skillName: "Java", skillUrl: java },
-  { skillName: "Git", skillUrl: git },
-  { skillName: "GitHub", skillUrl: github },
-  { skillName: "VsCode", skillUrl: vscode },
-  { skillName: "Figma", skillUrl: figma },
-  { skillName: "Postman", skillUrl: postman },
+  "HTML",
+  "CSS",
+  "Tailwind CSS",
+  "Sass",
+  "JavaScript",
+  "React",
+  "Redux",
+  "TypeScript",
+  "Next.js",
+  "Node.js",
+  "Express.js",
+  "MongoDB",
+  "MySQL",
+  "Docker",
+  "Java",
+  "Git",
+  "VsCode",
+  "Figma",
+  "Postman",
 ] as const;
+
+// export const skillsData = [
+//   { skillName: "HTML", skillUrl: HTML },
+//   { skillName: "CSS", skillUrl: CSS },
+//   { skillName: "Tailwind CSS", skillUrl: tailwind },
+//   { skillName: "Sass", skillUrl: sass },
+//   { skillName: "JavaScript", skillUrl: javascript },
+//   { skillName: "React", skillUrl: react },
+//   { skillName: "Redux", skillUrl: redux },
+//   { skillName: "TypeScript", skillUrl: typescript },
+//   { skillName: "Next.js", skillUrl: nextjs },
+//   { skillName: "Node.js", skillUrl: node },
+//   { skillName: "Express.js", skillUrl: expressjs },
+//   { skillName: "MongoDB", skillUrl: mongodb },
+//   { skillName: "MySQL", skillUrl: mysql },
+//   { skillName: "Docker", skillUrl: docker },
+//   { skillName: "Java", skillUrl: java },
+//   { skillName: "Git", skillUrl: git },
+//   { skillName: "GitHub", skillUrl: github },
+//   { skillName: "VsCode", skillUrl: vscode },
+//   { skillName: "Figma", skillUrl: figma },
+//   { skillName: "Postman", skillUrl: postman },
+// ] as const;

@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { easeInOut, motion, useScroll, useTransform } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { GoLinkExternal } from "react-icons/go";
 
@@ -23,7 +23,7 @@ export default function Project({
     offset: ["0 1", "1.33 1"],
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
-  const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.3, 1]);
+  const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
   return (
     <motion.div
@@ -31,6 +31,10 @@ export default function Project({
       style={{
         scale: scaleProgess,
         opacity: opacityProgess,
+      }}
+      transition={{
+        duration: 0.8,
+        ease: easeInOut,
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >

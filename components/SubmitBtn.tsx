@@ -9,7 +9,7 @@ const SubmitBtn = () => {
       disabled={pending}
     >
       {pending ? (
-        <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"></div>
+        <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white dark:border-black"></div>
       ) : (
         <>
           Submit{" "}
@@ -20,23 +20,3 @@ const SubmitBtn = () => {
   );
 };
 export default SubmitBtn;
-
-{
-  /* <motion.div
-initial={{ opacity: 0, x: -100 }}
-animate={{ opacity: 1, x: 0 }}
-transition={{ duration: 0.8, delay: 0.7 }}
->
-<motion.a
-  href="#contact"
-  className="group bg-gray-900 text-white/80 w-52 py-3 flex items-center justify-center gap-2 rounded-md outline-none focus:scale-110 active:scale-105 transition duration-300 hover:text-white text-sm xl:text-base uppercase text-center font-semibold"
-  onClick={() => {
-    setActiveSection("Contact");
-    setTimeOfLastClick(Date.now());
-  }}
->
-  Get in touch{" "}
-  <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition group-hover:opacity-100" />
-</motion.a>
-</motion.div> */
-}

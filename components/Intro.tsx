@@ -4,7 +4,6 @@ import Image from "next/image";
 // import {Bungee Spice} from "next/font/google"
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaCat, FaGithubSquare } from "react-icons/fa";
@@ -13,9 +12,6 @@ import HeroImg from "../public/profile.jpg";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import SocialLinks from "./SocialLinks";
-
-import Home from "@/public/icons/icons8-home-500.png";
-
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
