@@ -81,7 +81,7 @@
 
 "use client";
 
-import { motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 import clsx from "clsx";
 import Link from "next/link";
 
@@ -101,9 +101,9 @@ const Header = () => {
             <motion.li
               className="flex items-center justify-center relative md:h-10 w-full transition-all ease-in duration-300"
               key={link.hash}
-              initial={{ opacity: 0, x: -100 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}
             >
               <Link
                 className={clsx(
