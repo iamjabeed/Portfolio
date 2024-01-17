@@ -8,6 +8,7 @@ import { HiHome } from "react-icons/hi";
 import luxehaven from "@/public/luxehaven.png";
 import filmagic from "@/public/filmagic.png";
 import vocalize from "@/public/vocalize.png";
+import portfolio from "@/public/portfolio.png";
 
 import HTML from "@/public/skills/html.png";
 import CSS from "@/public/skills/css.png";
@@ -83,6 +84,15 @@ export const projectsData = [
     imageUrl: filmagic,
     live: "https://filmagic-jabeed.vercel.app/",
     code: "https://github.com/iamjabeed/Filmagic",
+  },
+  {
+    title: " Digital Portfolio",
+    description:
+      "Engineered and launched a sleek and responsive personal portfolio website,effectively showcasing my expertise, projects, and accomplishments.",
+    tags: ["Next.js", "Typescript", "Tailwind", "Framer"],
+    imageUrl: portfolio,
+    live: "https://jabeed.vercel.app/",
+    code: "https://jabeed.vercel.app/",
   },
   {
     title: "Vocalize",
