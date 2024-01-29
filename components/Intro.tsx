@@ -5,12 +5,14 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { FaLinkedin, FaCat, FaGithub, FaInstagram } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
-import { FaCat, FaGithubSquare } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
 import HeroImg from "../public/profile.jpg";
 
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
@@ -51,7 +53,7 @@ export default function Intro() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, ease: "easeOut", delay: 0.3 }}
-          className="py-4 font-mono text-sm md:text-base text-center text-gray-800 dark:text-gray-200"
+          className="py-4 font-mono text-base md:text-lg text-center text-gray-800 dark:text-gray-200 mb-2"
         >
           {currentTime}
         </motion.h2>
@@ -135,6 +137,36 @@ export default function Intro() {
             Download CV{" "}
             <HiDownload className="opacity-60 group-hover:translate-y-1 transition group-hover:opacity-100" />
           </motion.a>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.9 }}
+          className="flex items-center gap-6 md:hidden mt-4"
+        >
+          <a
+            href="https://www.linkedin.com/in/iamjabeed"
+            target="_blank"
+            className="bg-transparent w-[2rem] h-[2rem] bg-opacity-80 backdrop-blur-md shadow-2xl rounded-full flex items-center justify-center active:scale-105 transition-all  opacity-80 hover:opacity-100 hover:scale-105 duration-300"
+          >
+            <FaLinkedin size={22} />
+          </a>
+
+          <a
+            href="https://github.com/iamjabeed"
+            target="_blank"
+            className="bg-transparent w-[2rem] h-[2rem] bg-opacity-80 backdrop-blur-md shadow-2xl rounded-full flex items-center justify-center active:scale-105 transition-all  opacity-80 hover:opacity-100 hover:scale-105 duration-300"
+          >
+            <FaGithub size={22} />
+          </a>
+          <a
+            href="https://www.instagram.com/iamjabeed_04/"
+            target="_blank"
+            className="bg-transparent w-[2rem] h-[2rem] bg-opacity-80 backdrop-blur-md shadow-2xl rounded-full flex items-center justify-center active:scale-105 transition-all  opacity-80 hover:opacity-100 hover:scale-105 duration-300"
+          >
+            <FaInstagram size={22} />
+          </a>
         </motion.div>
       </motion.div>
     </section>
