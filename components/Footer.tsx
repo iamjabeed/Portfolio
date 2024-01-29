@@ -10,7 +10,7 @@ const Footer = () => {
           &copy; {currentYear} crafted with 💛 by{" "}
           <Link
             href="https://www.linkedin.com/in/iamjabeed/"
-            className="hover:cursor-pointer hover:underline"
+            className="hover:cursor-pointer hover:underline text-black dark:text-white"
           >
             Jabeed
           </Link>

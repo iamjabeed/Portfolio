@@ -67,7 +67,7 @@ export const links = [
 
 export const projectsData = [
   {
-    title: "LUXEHAVEN",
+    title: "LuxeHaven",
     description:
       "Developed a groundbreaking e-commerce platform using MERN, ensuring a user-centric, secure, and highly efficient shopping experience",
 
