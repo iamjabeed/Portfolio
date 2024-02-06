@@ -6,6 +6,7 @@ import Image from "next/image";
 import { easeInOut, motion, useScroll, useTransform } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { GoLinkExternal } from "react-icons/go";
+import { MdArrowOutward } from "react-icons/md";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -81,7 +82,7 @@ export default function Project({
           <FaGithub size={26} />
         </a>
         <a href={live} target="_blank">
-          <GoLinkExternal size={26} />
+          <MdArrowOutward size={26} />
         </a>
       </div>
     </>
