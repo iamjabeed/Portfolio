@@ -12,8 +12,8 @@ body,
 }
 body {
   scroll-behavior: smooth;
-  /* font-family: "Poppins", sans-serif !important; */
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important; */
 }
 ::selection {
   background-color: #ff4800;
