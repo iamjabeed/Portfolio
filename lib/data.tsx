@@ -119,12 +119,12 @@ export const skillsData = [
   "Express.js",
   "MongoDB",
   "MySQL",
+  "Postman",
   "Docker",
   "Java",
   "Git",
   "VsCode",
   "Figma",
-  "Postman",
 ] as const;
 
 // export const skillsData = [
