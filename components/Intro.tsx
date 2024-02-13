@@ -70,13 +70,14 @@ export default function Intro() {
           >
             <Image
               src={HeroImg}
-              alt="Jabeed portrait"
+              alt="Hero image"
               width="192"
               height="192"
               quality="95"
               priority={true}
-              className="h-28 w-28 rounded-full object-cover shadow-xl"
+              className="h-28 w-28 rounded-full object-cover shadow-xl pointer-events-none"
             />
+            <div className="absolute top-0 left-0 w-full h-full pointer-events-none"></div>
           </motion.div>
         </motion.div>
       </motion.div>
