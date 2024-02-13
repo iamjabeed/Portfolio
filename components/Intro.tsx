@@ -83,15 +83,15 @@ export default function Intro() {
       </motion.div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-base font-medium !leading-[1.5] sm:text-base lg:text-lg 2xl:text-2xl w-full sm:w-[60%] mx-auto dark:text-gray-300 dark:font-medium text-left"
+        className="mb-10 mt-4 px-4 text-base font-medium !leading-[1.5] sm:text-base lg:text-lg 2xl:text-[22px] w-full sm:w-[60%] mx-auto dark:text-gray-300 dark:font-medium text-left"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
       >
         <span className="font-bold text-4xl leading-10 mr-1">H</span>ey there!{" "}
-        <span className="hover:underline"> I&apos;m Jabeed</span> , a
-        multidisciplinary <span className="">full-stack developer</span> based
-        in India. I specialize in crafting sleek and responsive websites. with a
+        <span className="hover:underline"> I&apos;m Jabeed</span> , a multi-
+        disciplinary <span className="">full-stack developer</span> based in
+        India. I specialize in crafting sleek and responsive websites. with a
         focus on React (Next.js). Let&apos;s turn your ideas into digital
         brilliance!
       </motion.h1>

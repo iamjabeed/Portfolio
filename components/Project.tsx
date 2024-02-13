@@ -27,19 +27,19 @@ export default function Project({
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.65, 1]);
 
   return (
-    <div className="mb-12">
-      <motion.div
-        ref={ref}
-        style={{
-          scale: scaleProgess,
-          opacity: opacityProgess,
-        }}
-        transition={{
-          duration: 0.3,
-          ease: easeInOut,
-        }}
-        className="group mb-4 sm:mb-4 last:mb-0"
-      >
+    <motion.div
+      ref={ref}
+      style={{
+        scale: scaleProgess,
+        opacity: opacityProgess,
+      }}
+      transition={{
+        duration: 0.3,
+        ease: easeInOut,
+      }}
+      className="mb-12"
+    >
+      <div className="group mb-4 sm:mb-4 last:mb-0">
         <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition-all duration-500 sm:group-even:pl-8 dark:bg-[#121212] dark:hover:bg-white/10 dark:text-white mx-2">
           <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
             <h3 className="text-2xl font-semibold">{title}</h3>
@@ -76,12 +76,12 @@ export default function Project({
         group-even:right-[initial] group-even:-left-40 "
           />
         </section>
-      </motion.div>
+      </div>
       <div className="flex mb-2 justify-end gap-6 mx-2">
         <a
           href={code}
           target="_blank"
-          className="group bg-gray-900  text-white/80 w-[30vw] sm:w-28 py-2 flex items-center justify-center gap-2 rounded-md outline-none focus:scale-110 active:scale-105 transition duration-300 hover:text-white text-sm xl:text-base uppercase text-center font-semibold dark:bg-[#FFD700] dark:text-black"
+          className="group bg-gray-900  text-white/80 w-1/2 sm:w-28 py-2 flex items-center justify-center gap-2 rounded-md outline-none focus:scale-110 active:scale-105 transition duration-300 hover:text-white text-sm xl:text-base uppercase text-center font-semibold dark:bg-[#FFD700] dark:text-black"
         >
           GitHub
           <FaGithub
@@ -92,7 +92,7 @@ export default function Project({
         <a
           href={live}
           target="_blank"
-          className="group bg-white w-[30vw] sm:w-28 py-2 flex items-center justify-center gap-2 rounded-md outline-none focus:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 text-sm xl:text-base uppercase text-center font-semibold "
+          className="group bg-white w-1/2 sm:w-28 py-2 flex items-center justify-center gap-2 rounded-md outline-none focus:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 text-sm xl:text-base uppercase text-center font-semibold "
         >
           Live
           <MdArrowOutward
@@ -101,6 +101,6 @@ export default function Project({
           />
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 }

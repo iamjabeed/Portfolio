@@ -9,27 +9,7 @@ import luxehaven from "@/public/luxehaven.png";
 import filmagic from "@/public/filmagic.png";
 import vocalize from "@/public/vocalize.png";
 import portfolio from "@/public/portfolio.png";
-
-import HTML from "@/public/skills/html.png";
-import CSS from "@/public/skills/css.png";
-import figma from "@/public/skills/figma.png";
-import git from "@/public/skills/git.png";
-import javascript from "@/public/skills/javascript.png";
-import node from "@/public/skills/node.png";
-import react from "@/public/skills/react.png";
-import redux from "@/public/skills/redux.png";
-import sass from "@/public/skills/sass.png";
-import expressjs from "@/public/skills/express.png";
-import github from "@/public/skills/github.png";
-import java from "@/public/skills/java.png";
-import mongodb from "@/public/skills/mongodb.png";
-import mysql from "@/public/skills/mysql.png";
-import nextjs from "@/public/skills/nextjs.png";
-import tailwind from "@/public/skills/tailwind.png";
-import typescript from "@/public/skills/typescript.png";
-import docker from "@/public/skills/docker.png";
-import postman from "@/public/skills/postman.png";
-import vscode from "@/public/skills/vscode.png";
+import chat from "@/public/chat.png";
 
 import { GoHome } from "react-icons/go";
 import { RxPerson } from "react-icons/rx";
@@ -77,13 +57,21 @@ export const projectsData = [
     code: "https://github.com/iamjabeed/LuxeHaven",
   },
   {
-    title: "The Filmagic",
+    title: "Real-Time Chat App",
     description:
-      "Created a movie streaming app with real-time access to detailed information on movies, TV shows, cast, related videos, and insider details using TMDB API.",
-    tags: ["React", "SCSS", "React Router", "Redux", "TMDB API"],
-    imageUrl: filmagic,
-    live: "https://filmagic-jabeed.vercel.app/",
-    code: "https://github.com/iamjabeed/Filmagic",
+      "Developed a full-stack web application that allows users to chat with each other in real-time. It uses Socket.io for bi-directional data transfer.",
+
+    tags: [
+      "Zustand",
+      "Socket.io",
+      "React",
+      "Express.js",
+      "MongoDB",
+      "Tailwind",
+    ],
+    imageUrl: chat,
+    live: "https://swiftline.onrender.com/",
+    code: "https://github.com/iamjabeed/realtime-chat",
   },
   {
     title: " Digital Portfolio",
@@ -94,6 +82,16 @@ export const projectsData = [
     live: "https://jabeed.vercel.app/",
     code: "https://jabeed.vercel.app/",
   },
+  {
+    title: "The Filmagic",
+    description:
+      "Created a movie streaming app with real-time access to detailed information on movies, TV shows, cast, related videos, and insider details using TMDB API.",
+    tags: ["React", "SCSS", "React Router", "Redux", "TMDB API"],
+    imageUrl: filmagic,
+    live: "https://filmagic-jabeed.vercel.app/",
+    code: "https://github.com/iamjabeed/Filmagic",
+  },
+
   {
     title: "Vocalize",
     description:
