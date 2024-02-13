@@ -81,7 +81,7 @@ export default function Project({
         <a
           href={code}
           target="_blank"
-          className="group bg-gray-900  text-white/80 w-1/2 sm:w-28 py-2 flex items-center justify-center gap-2 rounded-md outline-none focus:scale-110 active:scale-105 transition duration-300 hover:text-white text-sm xl:text-base uppercase text-center font-semibold dark:bg-[#FFD700] dark:text-black"
+          className="group bg-gray-900  text-white/80 w-1/2 sm:w-1/3 py-2 flex items-center justify-center gap-2 rounded-md outline-none focus:scale-110 active:scale-105 transition duration-300 hover:text-white text-sm xl:text-base uppercase text-center font-semibold dark:bg-[#FFD700] dark:text-black"
         >
           GitHub
           <FaGithub
@@ -92,7 +92,7 @@ export default function Project({
         <a
           href={live}
           target="_blank"
-          className="group bg-white w-1/2 sm:w-28 py-2 flex items-center justify-center gap-2 rounded-md outline-none focus:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 text-sm xl:text-base uppercase text-center font-semibold "
+          className="group bg-white w-1/2 sm:w-1/3 py-2 flex items-center justify-center gap-2 rounded-md outline-none focus:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 text-sm xl:text-base uppercase text-center font-semibold "
         >
           Live
           <MdArrowOutward
