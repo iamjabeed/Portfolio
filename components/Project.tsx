@@ -92,7 +92,7 @@ export default function Project({
         <a
           href={live}
           target="_blank"
-          className="group bg-white w-1/2 sm:w-1/3 py-2 flex items-center justify-center gap-2 rounded-md outline-none focus:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 text-sm xl:text-base uppercase text-center font-semibold "
+          className="group bg-white  w-1/2 sm:w-1/3 py-2 flex items-center justify-center gap-2 rounded-md outline-none focus:scale-110 active:scale-105 transition cursor-pointer borderBlack  dark:bg-white/10 text-sm xl:text-base uppercase text-center font-semibold "
         >
           Live
           <MdArrowOutward
