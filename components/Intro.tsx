@@ -37,7 +37,7 @@ export default function Intro() {
     updateTime();
 
     //* Update time every minute
-    const intervalId = setInterval(updateTime, 150000);
+    const intervalId = setInterval(updateTime, 15000);
 
     return () => clearInterval(intervalId);
   }, []);
