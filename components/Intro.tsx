@@ -37,7 +37,7 @@ export default function Intro() {
     updateTime();
 
     //* Update time every minute
-    const intervalId = setInterval(updateTime, 60000);
+    const intervalId = setInterval(updateTime, 150000);
 
     return () => clearInterval(intervalId);
   }, []);
@@ -46,7 +46,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] "
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <motion.div className="flex items-center justify-center flex-col">
         <motion.h2
@@ -83,17 +83,13 @@ export default function Intro() {
       </motion.div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-base font-medium !leading-[1.5] sm:text-base lg:text-lg 2xl:text-[22px] w-full sm:w-[60%] mx-auto dark:text-gray-300 dark:font-medium text-left"
+        className="mb-10 mt-4 px-4 text-base font-medium !leading-[1.5] sm:text-base lg:text-[17px] 2xl:text-[20px] w-full sm:w-[60%] mx-auto dark:text-gray-300 dark:font-medium text-center"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
       >
-        <span className="font-bold text-4xl leading-10 mr-1">H</span>ey there!{" "}
-        <span className="hover:underline"> I&apos;m Jabeed</span> , a multi-
-        disciplinary <span className="">full-stack developer</span> based in
-        India. I specialize in crafting sleek and responsive websites. with a
-        focus on React (Next.js). Let&apos;s turn your ideas into digital
-        brilliance!
+        Hey there!{" "}
+        <span className="hover:underline"> I&apos;m <span className="font-semibold cursor-pointer">Jabeed</span></span> , a versatile full-stack developer from India, thriving in the remote work environment as an SDE. My passion lies in transforming raw concepts into captivating digital experiences that leave a lasting impact. Let&apos;s turn your ideas into digital brilliance! 
       </motion.h1>
 
       <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium">
