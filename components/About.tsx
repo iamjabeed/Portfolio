@@ -20,7 +20,7 @@ export default function About() {
     >
       <SectionHeading>About</SectionHeading>
 
-      <div className="text-start text-base lg:text-lg font-medium px-2">
+      <div className="text-center sm:text-start text-base lg:text-lg font-medium px-2">
         <p className="mb-4">
           <span className="font-bold text-4xl leading-10">I</span> am embarking
           on a transformative journey as a{" "}
@@ -29,7 +29,7 @@ export default function About() {
           fabric of my freelance career. Building and fixing things, especially
           in the dynamic world of the web, bring me genuine joy.
         </p>
-        {/* <p className="mb-4">
+        <p className="mb-4">
         I specialize in crafting elevated, intuitive, and minimalistic designs
         <span className="font-bold underline">
           {" "}
@@ -37,7 +37,7 @@ export default function About() {
         </span>{" "}
         to help them stand out in the digital landscape with a powerful
         impact.
-      </p> */}
+      </p>
 
         <p className="mb-4">
           <span className="">Beyond crafting websites,</span> I aim to create
@@ -50,10 +50,10 @@ export default function About() {
           not just a web developer; I&apos;m an architect of digital landscapes,
           a storyteller of brands.
         </p>
-        <p>
+        {/* <p>
           <span className="font-bold"></span> Aside from building for the web, I
           deeply enjoy playing volleyball and video games.
-        </p>
+        </p> */}
       </div>
     </motion.section>
   );
